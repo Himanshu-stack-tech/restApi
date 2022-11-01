@@ -45,7 +45,7 @@
                 		</div>
             		</div>
             		<a href="{{ url('/') }}/{{ $product->tagname }}/{{ $product->id }}">
-                		<div class="gallery-single-item isotope-product_image text-center">
+                		<div class="gallery-single-item isotope-product_image text-center test1">
                     		<img src="{{ asset('images/post/new_images/thumb') }}/{{ $product->thumb }}" class="gs-item-image w-100" alt="">
                     		@if(isset($product->comment))
                     		<div class="isotope-product-labels isotope-product-comment">{{ $product->comment }}</div>
@@ -97,8 +97,8 @@
 
                 	@foreach($products as $product)
 
-                    <div class="ctm_square">
-                        <div class="isotope-item gallery-single-item-square" style="margin: 10px; background-image:url({{ asset('images/post/new_images/thumb') }}/{{ $product->thumb }}) /* height:300px; overflow:hidden;*/ ">
+                    <div class="ctm_square 333">
+                        <div class="isotope-item gallery-single-item-square test222" style="margin: 10px; background-image:url({{ asset('images/post/new_images/thumb') }}/{{ $product->thumb }}) /* height:300px; overflow:hidden;*/ ">
                     		<a href="{{ url('/') }}/product_details/{{ $product->id }}">
                         		<div class="gallery-single-item isotope-product_image text-center squared-clickable-item" >
                             		<!--<img src="{{ asset('images/post/new_images/thumb') }}/{{ $product->thumb }}" style="min-height:300px;" class="gs-item-image w-100" alt="">-->
@@ -161,7 +161,7 @@
             	@foreach($products as $product)
             	
                 <div class="ctm_square">
-                    <div class="isotope-item" style="overflow:hidden; margin-top: 10px;">
+                    <div class="isotope-item 2323" style="overflow:hidden; margin-top: 10px;">
                 		<a href="{{ url('/') }}/{{ $product->tagname }}/{{ $product->id }}">
                     		<div class="gallery-single-item isotope-product_image text-center">
                         		<img src="{{ asset('images/post/new_images/thumb') }}/{{ $product->thumb }}" class="gs-item-image w-100" alt="">
